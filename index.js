@@ -1,5 +1,11 @@
 // Question 1: What are the differences between mutating array methods and non-mutation array methods in JavaScript. List 5 array methods that fall under each of them.
+/*
+    Mutating Array Methods change the array, after the method has been used. They add or remove elements from the array or modify existing elements.
+    Examples are: array.push(), array.unshift(), array.pop(), array.shift(), array.splice()
 
+    Non-Mutating Array Mathods do not change the array,after the method has been used. They create a new array from thr elements of the original array, but do not modify the origina array.
+    Examples are: array.concat(), ...array, array.filter(), array.slice(), array.map()
+*/
 
 
 // Question 2: Here is an array of languages: [‘C#’, ‘JavaScript’, ‘Ruby’, ‘PHP’, ‘Python’]. Perform this operation on them 
@@ -20,7 +26,6 @@ console.log(languages);
 // 5. Replace ‘PHP’ with ‘Go’ and ‘Rust’
 languages.splice(5,1,'Go', 'Rust');
 console.log(languages);
-
 
 
 // Question 3: What will be the value of fruit after calling the function changeFruit?
