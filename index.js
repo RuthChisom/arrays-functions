@@ -54,14 +54,17 @@ console.log(maximumValue(test));
 //  valTimesIndex([1,2,3]) // [0,2,6]
 // 		valTimesIndex([5,10,15]) // [0,10,30]
 console.log("Question 5");
+const newArray = [];
 const valTimesIndex = (arr) => {
-    for(let key of arr){
-        console.log(key);
-        console.log(arr[key]);
-
-    }
+    arr.forEach((item,index) => {
+        // console.log(index);
+        // console.log(item);
+        newArray[index] = item * index;
+    });
 }
-let values = [1,2,3];
-// let values = [5,10,15];
-console.log(valTimesIndex([values]));
+// let values = [1,2,3];
+let values = [5,10,15];
+valTimesIndex(values);
+
+console.log(newArray);
 
